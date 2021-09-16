@@ -1,0 +1,23 @@
+{
+  "name": "cypressWithDOCKER-CUCUMBER",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galuszkamarta/cypressWithDOCKER-CUCUMBER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galuszkamarta/cypressWithDOCKER-CUCUMBER/issues"
+  },
+  "homepage": "https://github.com/galuszkamarta/cypressWithDOCKER-CUCUMBER#readme",
+  "dependencies": {
+    "cypress": "^8.4.0"
+  }
+}
