@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress run --spec\"cypress/integration/regression/Regression2.spec.js\"",
-    "open": "cypress open"
+    "open": "cypress open",
+    "run-dash": "cypress run --record --key xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx"
   },
   "repository": {
     "type": "git",
