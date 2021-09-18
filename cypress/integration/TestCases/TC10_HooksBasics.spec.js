@@ -5,7 +5,7 @@ describe('Hooks Basics',function () {
     })  
 
     beforeEach(function (){
-        cy.log('Before block Each block')
+        cy.log('Before Each block')
     }) 
 
     it('Search item',function () {
@@ -21,10 +21,10 @@ describe('Hooks Basics',function () {
     })
 
     afterEach(function (){
-        cy.log('Before block')
+        cy.log('After Each block')
     }) 
 
     after(function (){
-        cy.log('Before block')
+        cy.log('After block')
     })  
 })
