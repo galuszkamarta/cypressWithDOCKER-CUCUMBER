@@ -10,7 +10,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add("conduitLogin", function(email,password){ 
+    cy.visit('/')
+    cy.contains('Sign in').click()
+    cy.get('input[type="email"]').type(email)
+    cy.get('input[type="password"]').type(password)
+    cy.get('button[type="submit"]').click()
+ })
+
+ import 'cypress-file-upload';
 //
 //
 // -- This is a child command --

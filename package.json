@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cypress run --spec\"cypress/integration/regression/Regression2.spec.js\"",
+    "open": "cypress open",
+    "run-dash": "cypress run --record --key xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,11 @@
   "homepage": "https://github.com/galuszkamarta/cypressWithDOCKER-CUCUMBER#readme",
   "dependencies": {
     "cypress": "^8.4.0"
+  },
+  "devDependencies": {
+    "csv-parse": "^4.16.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-xpath": "^1.6.2",
+    "xlsx": "^0.17.2"
   }
 }
