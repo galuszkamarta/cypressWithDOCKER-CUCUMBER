@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "open": "cypress open",
-    "run-dash": "cypress run --record --key d49fe8b0-aa13-4d4a-a5f1-4b02e82e412f",
+    "run-dash": "cypress run --record --key xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx",
     "scripts": "cypress run --spec \"cypress/integration/smoke/*.js\"",
     "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
     "pretest": "npm run clean:reports",
