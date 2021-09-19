@@ -1,0 +1,12 @@
+{
+    "user": {
+        "id": 96273,
+        "email": "cypressdemo@gmail.com",
+        "createdAt": "2020-05-08T14:05:40.058Z",
+        "updatedAt": "2020-05-08T14:05:40.063Z",
+        "username": "Vignesh-Cypress-Project",
+        "bio": null,
+        "image": null,
+        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OTYyNzMsInVzZXJuYW1lIjoiY3lwcmVzc2RlbW9wcm9qIiwiZXhwIjoxNjM3MjM0NzM0fQ.1lxvu_lVz6sYlg9QZgLclUBHgwPe4POB1wxrY1FtVEQ"
+    }
+}
