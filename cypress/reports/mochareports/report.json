@@ -1,0 +1,189 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 1,
+    "pending": 1,
+    "failures": 1,
+    "start": "2021-09-19T09:29:36.907Z",
+    "end": "2021-09-19T09:29:58.705Z",
+    "duration": 13914,
+    "testsRegistered": 3,
+    "passPercent": 33.333333333333336,
+    "pendingPercent": 33.333333333333336,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c561384-4555-4c10-b942-5ae76d2289ce",
+      "title": "",
+      "fullFile": "cypress/integration/smoke/TC01_FirstTC.spec.js",
+      "file": "cypress/integration/smoke/TC01_FirstTC.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+          "title": "First Test Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Conduit Login",
+              "fullTitle": "First Test Case Conduit Login",
+              "timedOut": null,
+              "duration": 5557,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.contains('Sign in').click();\ncy.get('input[type=\"email\"]').type('cypressdemo@gmail.com');\ncy.get('input[type=\"password\"]').type('cypressdemo');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Settings').click();\ncy.contains('Or click here to logout.').click();",
+              "err": {},
+              "uuid": "69cce533-6feb-4488-af16-8b8d994a5835",
+              "parentUUID": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test block",
+              "fullTitle": "First Test Case Test block",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "c2815ead-fb1d-47f4-ad18-70c127cab7a5",
+              "parentUUID": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69cce533-6feb-4488-af16-8b8d994a5835"
+          ],
+          "failures": [],
+          "pending": [
+            "c2815ead-fb1d-47f4-ad18-70c127cab7a5"
+          ],
+          "skipped": [],
+          "duration": 5557,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "33c6894c-44da-4f1b-b172-a59329da9633",
+      "title": "",
+      "fullFile": "cypress/integration/smoke/TC02_RadioButtons.spec.js",
+      "file": "cypress/integration/smoke/TC02_RadioButtons.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbb239d6-bbff-4b49-ae60-64f3917d11cd",
+          "title": "Basic UI Elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radio Buttons",
+              "fullTitle": "Basic UI Elements Radio Buttons",
+              "timedOut": null,
+              "duration": 8357,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://demo.automationtesting.in/Register.html');\ncy.title().should('eq', 'Register');\ncy.get('input[value=\"Male123\"]').should('not.be.checked').click();\ncy.get('input[value=\"FeMale\"]').should('not.be.checked').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[value=\"Male123\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[value=\"Male123\"]`, but never found it.\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/smoke/TC02_RadioButtons.spec.js:103:38)",
+                "diff": null
+              },
+              "uuid": "6240e082-7561-4572-ac40-d5c52166dd47",
+              "parentUUID": "cbb239d6-bbff-4b49-ae60-64f3917d11cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6240e082-7561-4572-ac40-d5c52166dd47"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8357,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
