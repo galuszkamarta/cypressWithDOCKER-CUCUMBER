@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-09-19T09:29:47.659Z",
+    "end": "2021-09-19T09:29:58.705Z",
+    "duration": 11046,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "33c6894c-44da-4f1b-b172-a59329da9633",
+      "title": "",
+      "fullFile": "cypress/integration/smoke/TC02_RadioButtons.spec.js",
+      "file": "cypress/integration/smoke/TC02_RadioButtons.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cbb239d6-bbff-4b49-ae60-64f3917d11cd",
+          "title": "Basic UI Elements",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Radio Buttons",
+              "fullTitle": "Basic UI Elements Radio Buttons",
+              "timedOut": null,
+              "duration": 8357,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://demo.automationtesting.in/Register.html');\ncy.title().should('eq', 'Register');\ncy.get('input[value=\"Male123\"]').should('not.be.checked').click();\ncy.get('input[value=\"FeMale\"]').should('not.be.checked').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[value=\"Male123\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `input[value=\"Male123\"]`, but never found it.\n    at Context.eval (http://demo.automationtesting.in/__cypress/tests?p=cypress/integration/smoke/TC02_RadioButtons.spec.js:103:38)",
+                "diff": null
+              },
+              "uuid": "6240e082-7561-4572-ac40-d5c52166dd47",
+              "parentUUID": "cbb239d6-bbff-4b49-ae60-64f3917d11cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6240e082-7561-4572-ac40-d5c52166dd47"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8357,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

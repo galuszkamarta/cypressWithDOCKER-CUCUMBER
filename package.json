@@ -4,9 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run --spec\"cypress/integration/regression/Regression2.spec.js\"",
     "open": "cypress open",
-    "run-dash": "cypress run --record --key xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx"
+    "run-dash": "cypress run --record --key xxxxxxxx-xxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "scripts": "cypress run --spec \"cypress/integration/smoke/*.js\"",
+    "clean:reports": "rm -R -f cypress/reports && mkdir cypress/reports && mkdir cypress/reports/mochareports",
+    "pretest": "npm run clean:reports",
+    "combine-reports": "mochawesome-merge ./cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "generate-reports": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test": "npm run scripts || npm run posttest --reporter"
   },
   "repository": {
     "type": "git",
@@ -25,7 +31,12 @@
   "devDependencies": {
     "csv-parse": "^4.16.3",
     "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
+    "mocha": "^9.1.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
     "xlsx": "^0.17.2"
   }
 }

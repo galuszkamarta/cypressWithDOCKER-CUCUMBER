@@ -1,0 +1,127 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2021-09-19T09:29:36.907Z",
+    "end": "2021-09-19T09:29:42.512Z",
+    "duration": 5605,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c561384-4555-4c10-b942-5ae76d2289ce",
+      "title": "",
+      "fullFile": "cypress/integration/smoke/TC01_FirstTC.spec.js",
+      "file": "cypress/integration/smoke/TC01_FirstTC.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+          "title": "First Test Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Conduit Login",
+              "fullTitle": "First Test Case Conduit Login",
+              "timedOut": null,
+              "duration": 5557,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://react-redux.realworld.io/');\ncy.contains('Sign in').click();\ncy.get('input[type=\"email\"]').type('cypressdemo@gmail.com');\ncy.get('input[type=\"password\"]').type('cypressdemo');\ncy.get('button[type=\"submit\"]').click();\ncy.contains('Settings').click();\ncy.contains('Or click here to logout.').click();",
+              "err": {},
+              "uuid": "69cce533-6feb-4488-af16-8b8d994a5835",
+              "parentUUID": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test block",
+              "fullTitle": "First Test Case Test block",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "c2815ead-fb1d-47f4-ad18-70c127cab7a5",
+              "parentUUID": "e009fb1f-00f8-4cf1-a2cd-3c2a3b7778f4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "69cce533-6feb-4488-af16-8b8d994a5835"
+          ],
+          "failures": [],
+          "pending": [
+            "c2815ead-fb1d-47f4-ad18-70c127cab7a5"
+          ],
+          "skipped": [],
+          "duration": 5557,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
